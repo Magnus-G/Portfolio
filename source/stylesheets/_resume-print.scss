@@ -1,0 +1,89 @@
+$serif: 'georgia', serif;
+$resume-font-size: 11px;
+$resume-font-color: dimgray;
+$sans-thin-2: 'Oswald', sans-serif;
+$sans-2: 'Source Sans Pro', sans-serif;
+
+.resume-print {
+  background: white;
+  display: flex;
+  padding: 2em;
+  max-width: 40em;
+  margin: auto;
+  background: white;
+
+  aside {
+    text-align: right;
+    display: inline-block; 
+    margin-right: 3em;
+    padding-bottom: 1em;
+    
+    h1 {
+      text-transform: uppercase;
+      display: inline-block;
+      color: $resume-font-color;
+      font-family: $sans-thin-2;
+      font-size: $resume-font-size * 1.2;
+      font-weight: 800;
+      margin: 0 0 1em;
+    }
+
+    p {
+      color: $resume-font-color;
+      font-size: $resume-font-size;
+      font-family: $sans-2;
+      line-height: $resume-font-size * 1.5;
+      margin: 0;
+
+      span {
+        font-family: $serif;
+        font-size: $resume-font-size * 1.1;
+      }
+    }
+  }
+
+  article {
+    width: 24em;
+
+    h1 {
+      text-transform: uppercase;
+      display: block;
+      color: $resume-font-color;
+      font-size: $resume-font-size * .7;
+      font-weight: 600;
+      border-bottom: 1px solid lighten($resume-font-color, 40);
+      padding-bottom: .7em;
+      margin: 0 0 1.5em;
+    }
+
+    h2 { // headers
+      color: $resume-font-color;
+      font-size: $resume-font-size * 1.1;
+      font-family: $serif;
+      font-weight: 600;
+      margin: 0 0 .4em 0;
+
+      span {
+        font-family: $serif;
+        font-style: italic;
+        font-weight: 400;
+      }
+    }
+
+    h3 { // date
+      color: #9C9C9C;
+      font-size: $resume-font-size;
+      font-weight: 400;
+      font-family: $serif;
+      margin: 0 0 .5em;
+    }
+
+    p {
+      color: $resume-font-color;
+      font-size: $resume-font-size;
+      font-family: $sans-2;
+      margin: 0 0 2.4em;
+      line-height: 1.5;
+    }
+  }
+}
