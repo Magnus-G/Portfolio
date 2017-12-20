@@ -35,6 +35,10 @@ $sans-2: 'Source Sans Pro', sans-serif;
       line-height: $resume-font-size * 1.5;
       margin: 0;
 
+      &:last-child {
+        margin-top: 1em;
+      }
+
       span {
         font-family: $serif;
         font-size: $resume-font-size * 1.1;
@@ -45,7 +49,7 @@ $sans-2: 'Source Sans Pro', sans-serif;
   article {
     width: 24em;
 
-    h1 {
+    h2 {
       text-transform: uppercase;
       display: block;
       color: $resume-font-color;
@@ -56,21 +60,28 @@ $sans-2: 'Source Sans Pro', sans-serif;
       margin: 0 0 1.5em;
     }
 
-    h2 { // headers
+    h3 { // headers
+      color: $resume-font-color;
+      display: inline-block;
+      font-size: $resume-font-size * 1.1;
+      font-family: $serif;
+      font-weight: 600;
+      margin: 0 0 .4em 0;
+    }
+
+    h4 { // place
       color: $resume-font-color;
       font-size: $resume-font-size * 1.1;
       font-family: $serif;
       font-weight: 600;
       margin: 0 0 .4em 0;
-
-      span {
-        font-family: $serif;
-        font-style: italic;
-        font-weight: 400;
-      }
+      display: inline-block;
+      font-family: $serif;
+      font-style: italic;
+      font-weight: 400;
     }
 
-    h3 { // date
+    h5 { // date
       color: #9C9C9C;
       font-size: $resume-font-size;
       font-weight: 400;
