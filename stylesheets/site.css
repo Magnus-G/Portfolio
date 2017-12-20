@@ -558,12 +558,14 @@ textarea {
       font-family: "Source Sans Pro", sans-serif;
       line-height: 16.5px;
       margin: 0; }
+      .resume-print aside p:last-child {
+        margin-top: 1em; }
       .resume-print aside p span {
         font-family: "georgia", serif;
         font-size: 12.1px; }
   .resume-print article {
     width: 24em; }
-    .resume-print article h1 {
+    .resume-print article h2 {
       text-transform: uppercase;
       display: block;
       color: dimgray;
@@ -572,17 +574,24 @@ textarea {
       border-bottom: 1px solid #cfcfcf;
       padding-bottom: .7em;
       margin: 0 0 1.5em; }
-    .resume-print article h2 {
+    .resume-print article h3 {
       color: dimgray;
+      display: inline-block;
       font-size: 12.1px;
       font-family: "georgia", serif;
       font-weight: 600;
       margin: 0 0 .4em 0; }
-      .resume-print article h2 span {
-        font-family: "georgia", serif;
-        font-style: italic;
-        font-weight: 400; }
-    .resume-print article h3 {
+    .resume-print article h4 {
+      color: dimgray;
+      font-size: 12.1px;
+      font-family: "georgia", serif;
+      font-weight: 600;
+      margin: 0 0 .4em 0;
+      display: inline-block;
+      font-family: "georgia", serif;
+      font-style: italic;
+      font-weight: 400; }
+    .resume-print article h5 {
       color: #9C9C9C;
       font-size: 11px;
       font-weight: 400;
