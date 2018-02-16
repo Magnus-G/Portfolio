@@ -1,6 +1,6 @@
-$(document).ready(function() {
-    $(".scroll-on-page-links").toggleClass("js-slide-up", 2000, "easeInOutExpo");
-});
+// $(document).ready(function() {
+//    $(".scroll-on-page-links").toggleClass("js-slide-up", 2000, "easeInOutExpo");
+// });
 
 ///////
 
