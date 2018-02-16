@@ -1,142 +1,114 @@
+@font-face {
+  font-family: 'peace';
+  src: url('../fonts/peace.otf');
+  // din.otf in folder source > fonts
+}
+
+@font-face {
+  font-family: 'norwester';
+  src: url('../fonts/norwester.otf');
+  // din.otf in folder source > fonts
+}
+
 $breakpoint: 680px;
+$background-color: #393c3e;
+
+$body-color: black;
+
 $hero-color: #231F1F;
-$background-color: $hero-color;
+$clients-background: black;
+$portfolio-background: #fbfbf3;
+$project-background: #efefe7;
+$resume-background: #ffced6;
+$contact-background: #455245;
+
+$what-i-do-max-width: 900px;
+$yellowish: beige;
+$what-i-do-background: $yellowish;
+
 $vertical-space: 1rem;
-$font-color: #E2DDC5;
+$light-font-color: #E2DDC5;
+$dark-font-color: #393c3e;
 $max-width: 666px;
+$resume-breakpoint: 500px;
+
+$container-padding: 5rem;
+
+$font-header: 'norwester', helvetica, sans-serif;
+$font-small-header: 'Oswald', helvetica, sans-serif;
+$font-serif: 'Merriweather', serif;
+
+@mixin top($foreground, $background) {
+  height: 0;
+  border-style: solid;
+  border-width: 100px 0 0 100vw;
+  border-color: $background transparent transparent $foreground;  
+}
+
+ @mixin bottom ($foreground, $background) {
+  height: 0;
+  border-style: solid;
+  border-width: 100px 0 0 100vw;
+  border-color: transparent transparent $foreground $background;
+}
+
 
 @import "normalize";
 @import "prism";
+@import "hero";
+@import "what-i-do";
+@import "clients";
+@import "portfolio";
 @import "project";
 @import "resume";
 @import "resume-print";
+@import "contact";
 
 body {
-  background: $background-color;
   -webkit-font-smoothing: antialiased;
-  color: $font-color;
+  color: $light-font-color;
+  background-color: $body-color;
+  margin: 0;
+}
+
+.scroll-link {
+  font-size: 0;
 }
 
 a {
-  color: $font-color;
-
+  color: $light-font-color;
 }
 
-.hero {
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  text-align: left;
-  width: 100%;
-  
-  .hero-content {
-    margin: 0 auto;
-    width: $max-width;
-    z-index: 1;
-  }
-
-  h1 {
-    font-family: 'Oswald', sans-serif;
-    margin: 0;
-    text-align: center;
-    font-size: 5em;
-    line-height: 1;
-    padding: 0.7em 0 0.6em;
-
-    @media (max-width: $breakpoint) {
-      font-size: 2.5em;
-    }
-  }
-
-  h2 {
-    font-weight: 400;
-  }
-
-  .keywords {
-    font-family: 'Oswald', sans-serif;
-    color: transparentize($hero-color, 0.1);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    @media (max-width: $breakpoint) {
-      padding: 1em;
-    }
-
-    div {
-      font-family: 'Work Sans', sans-serif;
-      font-size: 0.8em;
-      font-weight: 500;
-      flex-grow: 1;
-      padding: 0.5em 0;
-      text-align: center;
-    }
-  }
-
-  .ux {
-    background: #A9D7FF;
-  }
-  .web {
-    background: #3CB3B3;
-  }
-  .gfx {
-    background: pink;
-  }
-  .html {
-    background: #FF7D66;
-  }
-  .js {
-    background: #FFFFA8;
-  }
-  .scss {
-    background: #3CB3B3;
-  }
-  .ixd {
-    background: #66FFB5;
-  }
-  .type {
-    background: #66FFB5;
-  }
-
+h1 {
+  font-family: $font-header;
+  text-transform: uppercase;
+  margin: 0 auto 1rem;
+  font-weight: 100;
+  text-align: center;
 }
 
-.container {
-  padding: 3em 0 0;
-  width: 100%;
-  position: relative;
-  z-index: 2;
+h2 {
+  margin: 0 auto 3rem;
+  max-width: 570px;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 100;
+  line-height: 1.4;
+}
+
+p {
+  font-family: $font-serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300;
+
+  @media (max-width: $breakpoint) {
+    font-size: 0.9em;
+  }
 }
 
 img {
   width: 100%;
 }
-
-.scroll-on-page-links {
-  display: block;
-  color: $font-color;
-  max-width: 99px;
-  margin: 12em auto 0;
-  text-align: center;
-  border-top: 1px dashed transparentize($font-color, 0.8);
-  opacity: 0;
-}
-
-.scroll-on-page-link {
-  font-family: 'Work Sans', sans-serif;
-  text-transform: uppercase;
-  display: block;
-  text-decoration: none;
-  padding: 0.4em 0;
-  border-bottom: 1px dashed transparentize($font-color, 0.8);
-}
-
-.js-slide-up {
-  margin-top: 8em;
-  opacity: 1;
-
-  @media (max-width: $breakpoint) {
-    margin-top: 2em;
-  }
-
-}
-

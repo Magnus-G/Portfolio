@@ -1,0 +1,38 @@
+.contact-index-top {
+	@include top($contact-background, $resume-background);
+}
+
+.contact-projects-top {
+	@include top($contact-background, $portfolio-background);
+}
+
+.contact {
+	background-color: $contact-background;
+	padding-bottom: $container-padding;
+	text-align: center;
+}
+
+.contact-content {
+	width: 100vw;
+	padding-top: $container-padding;
+	margin-bottom: 3rem;
+	background-color: $contact-background;
+
+	a {
+		font-family: $font-header;
+		color: #ea5555;
+		font-size: 1.2rem;
+		text-decoration: none;
+		text-transform: uppercase;
+		background-color: $yellowish;
+		padding: 1.2rem 2rem;
+		border-radius: 4px;
+		letter-spacing: .6px;
+	}
+}
+
+.up-link {
+	font-family: $font-header;	
+	text-transform: uppercase;
+	color: darken($contact-background, 10);
+}

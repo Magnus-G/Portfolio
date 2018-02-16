@@ -1,0 +1,62 @@
+.about-top {
+	@include top(beige, $background-color);
+}
+
+.about-bottom {
+	@include top(black, beige);
+}
+
+.what-i-do-container {
+	background: $what-i-do-background;
+  width: 100vw;
+ }
+
+.what-i-do {
+	padding: $container-padding;
+	color: $background-color;
+}
+
+.about-cards {
+  $grid-gutter: 1rem;
+  padding: 0;
+  justify-content: space-between;
+  display: flex;
+  color: $light-font-color;
+  flex-flow: row wrap;
+  margin: auto;
+  max-width: $what-i-do-max-width;
+
+	p {
+		font-size: 0.9rem;
+	}
+
+  span {
+  	font-family: 'norwester';
+  	text-transform: lowercase;
+  	letter-spacing: 0.5px;
+  }
+
+  .about-cards-box-wrap {
+    flex-basis: 10rem;
+    flex-grow: 1;
+    flex-shrink: 0;
+    overflow: hidden;
+    padding: 0 $grid-gutter ($grid-gutter * 2);
+  }
+
+  .about-card {
+    flex-basis: 20em;
+    flex-grow: 1;
+    color: $background-color;
+    font-size: .9rem;
+  }
+  
+  .about-card-image {
+    height: auto;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+}

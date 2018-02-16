@@ -1,0 +1,46 @@
+.bottom-clients {
+  @include top($portfolio-background, $clients-background);
+}
+
+.clients-container {
+  background: $clients-background;
+  width: 100vw;
+}
+
+.clients {
+  padding: 7rem;
+  text-align: center;
+}
+
+.logo-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+
+  li {
+    align-self: center;
+    list-style: none;
+    padding: 1.2rem;
+    text-align: center;
+
+    img {
+      opacity: .5;
+    }
+
+    .square-logo {
+      max-height: 6em;
+      max-width: 6em; 
+    }
+
+    .wide-logo {
+      max-width: 10em;
+    }
+
+    .wider-logo {
+      max-width: 15em;
+    }
+  }
+}

@@ -1,0 +1,118 @@
+$project-padding: 20px;
+
+.portfolio-with-text-container {
+  padding-top: $container-padding;;
+  background: $portfolio-background;
+  width: 100vw;
+
+  h1, h2 {
+    color: $dark-font-color;
+  }
+}
+
+.portfolio-container {
+  background: $portfolio-background;
+  width: 100vw;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 6rem;
+  max-width: 1200px;
+  margin: auto;
+
+}
+
+.project-item {
+  flex-basis: 18rem;
+  padding: 2rem 1rem;
+  text-decoration: none;
+
+  img {
+    box-shadow: 0 1px 3px #00000033;
+    margin-bottom: .8rem;
+
+    @media (max-width: $breakpoint) {
+    }
+  }
+
+  h3, h4 {
+    color: $background-color;
+    font-size: .7rem;
+    margin: 0;
+  }
+
+  h3 {
+    color: transparentize($background-color, 0.5);
+    font-weight: 400;
+    margin-bottom: 0.1rem;
+  }
+}
+
+
+// $project-padding: 20px;
+
+// .project {
+//   padding: $vertical-space*1.2 0;
+//   margin: 0;
+
+//   h2 {
+//     font-family: 'Oswald', sans-serif;
+//     font-size: 2.3em;
+//     margin-bottom: $vertical-space;
+//     margin-top: 1em;
+
+//     @media (max-width: $breakpoint) {
+//       font-size: 1.3em;
+//     }
+//   }
+
+//   h4 {
+//     background: pink;
+//     color: $hero-color;
+//     font-size: 0.8em;
+//     padding: .4em .8em;
+//     display: inline-block;
+//     margin-bottom: 0;
+//   }
+
+//   .project-text {
+//     max-width: $max-width;
+//     margin: $vertical-space*2 auto;
+//     margin-bottom: $vertical-space * 3;
+//     border-bottom: 2px dashed transparentize($font-color, 0.8);
+//     padding-bottom: 1em;
+
+//     @media (max-width: $breakpoint) {
+//       max-width: auto;
+//       margin: $vertical-space auto;
+//       padding: 1em;
+//     }
+//   }
+
+//   .images {
+//     max-width: $max-width;
+//     margin: auto;
+//     display: block;
+//     box-shadow: 0 0px 3px transparentize(black, 0.5);
+    
+//     img {
+//       height: 400px;
+//       @media (max-width: $breakpoint) {
+//         height: auto;
+//       }
+//     }
+//   }
+
+//   #slidr-div {
+//     height: 400px;
+//   }
+// }
+
+// .slick-slider button.slick-arrow {
+//   @media (max-width: $breakpoint) {
+//     display: none !important;
+//   }
+// }

@@ -1,0 +1,83 @@
+.hero-container {
+  background: $background-color;
+  padding: $container-padding;
+}
+  
+.hero-header {
+  max-width: 660px;
+  margin: 0 auto 4rem;
+  
+  h3 {
+    font-family: norwester;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+    font-weight: 100;
+    background: #252525;
+    display: inline-block;
+    padding: .2rem .9rem;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 660px;
+  margin: auto;
+
+  img {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 12rem;
+    border: 2px solid white;
+    padding: .2rem;
+    margin: 0 2rem 0 0;
+    box-shadow: 0 2px 8px #00000033;
+  }
+
+  .hero-text {
+    padding-top: 1.5rem;    
+  }
+
+  h1 {
+    text-transform: uppercase;
+    border-bottom: 2px solid #E2DDC5;
+    display: inline-block;
+    font-size: 0.8rem;
+    font-family: 'peace';
+    margin: 0 0 .5rem;
+  }
+
+  p {
+    font-family: helvetica;
+    font-weight: 600;
+  }
+
+  a {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    color: #393c3e;
+    text-decoration: none;
+    padding: .1rem .8rem;
+    font-size: 0.8rem;
+    box-shadow: 0 2px 8px #00000033;
+  }
+
+  .what-link {
+    background: $yellowish;
+  }
+  .clients-link {
+    background: #A9D7FF;
+  }
+  .portfolio-link {
+    background: #FF7D66;
+  }
+  .resume-link {
+    background: $resume-background;
+  }
+  .contact-link {
+    background: lighten($contact-background, 45);
+  }
+}

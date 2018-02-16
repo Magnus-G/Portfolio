@@ -12,11 +12,20 @@ $sans-2: 'Source Sans Pro', sans-serif;
   margin: auto;
   background: white;
 
+  @media (max-width: $resume-breakpoint) {
+    display: block;
+  }
+
   aside {
     text-align: right;
     display: inline-block; 
     margin-right: 3em;
     padding-bottom: 1em;
+
+    @media (max-width: $resume-breakpoint) {
+      text-align: left;
+      width: 100%;
+    }
     
     h1 {
       text-transform: uppercase;
@@ -48,6 +57,11 @@ $sans-2: 'Source Sans Pro', sans-serif;
 
   article {
     width: 24em;
+
+    @media (max-width: $resume-breakpoint) {
+      text-align: left;
+      width: 100%;
+    }
 
     h2 {
       text-transform: uppercase;
