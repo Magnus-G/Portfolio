@@ -1,11 +1,17 @@
 .hero-container {
-  background: $background-color;
-  padding: $container-padding;
+  background: $hero-background;
 }
   
 .hero-header {
   max-width: 660px;
+  padding-top: $container-padding-small;
   margin: 0 auto 4rem;
+  
+  @media (max-width: $breakpoint) {
+    padding-top: 3rem;
+    margin: 0 auto 2rem;
+    text-align: center;
+  }
   
   h3 {
     font-family: norwester;
@@ -17,6 +23,11 @@
     background: #252525;
     display: inline-block;
     padding: .2rem .9rem;
+
+    @media (max-width: $breakpoint) {
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
   }
 }
 
@@ -26,6 +37,12 @@
   justify-content: center;
   max-width: 660px;
   margin: auto;
+  padding-bottom: $container-padding-small;
+
+  @media (max-width: $breakpoint) {
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
 
   img {
     width: 13rem;
@@ -35,10 +52,21 @@
     padding: .2rem;
     margin: 0 2rem 0 0;
     box-shadow: 0 2px 8px #00000033;
+
+    @media (max-width: $breakpoint) {
+      margin: auto;
+      width: 7rem;
+      height: 7rem;
+    }
   }
 
   .hero-text {
-    padding-top: 1.5rem;    
+    padding-top: 1.5rem;
+
+    @media (max-width: $breakpoint) {
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
   }
 
   h1 {
@@ -46,7 +74,7 @@
     border-bottom: 2px solid #E2DDC5;
     display: inline-block;
     font-size: 0.8rem;
-    font-family: 'peace';
+    font-family: 'helvetica';
     margin: 0 0 .5rem;
   }
 
@@ -56,13 +84,20 @@
   }
 
   a {
-    font-family: 'Oswald';
+    font-family: $font-header;
     text-transform: uppercase;
+    letter-spacing: .3px;
     color: #393c3e;
     text-decoration: none;
-    padding: .1rem .8rem;
-    font-size: 0.8rem;
+    padding: .1rem .6rem;
+    font-size: 0.9rem;
     box-shadow: 0 2px 8px #00000033;
+
+    @media (max-width: $breakpoint) {
+      display: inline-block;
+      margin-bottom: 1rem;
+      padding-bottom: .3rem;
+    }
   }
 
   .what-link {

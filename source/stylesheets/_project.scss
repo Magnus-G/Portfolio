@@ -2,6 +2,7 @@
 	position: fixed;
 	top: 2rem;
 	left: 2rem;
+	z-index: 2;
 
 	img {
 		height: 2.5rem;
@@ -15,14 +16,9 @@
 	width: 100vw;
 }
 
-.bottom-project {
-  @include top($portfolio-background, $project-background);
-}
-
-
 .project-container {
 	max-width: 666px;
-	margin: 0 auto 6rem;
+	margin: 0 auto;
 
 	img {
 		box-shadow: 0 1px 3px #00000039;
@@ -55,5 +51,15 @@
 		height: 3px;
 		width: 46px;
 		background-color: #393c3e85;
+	}
+}
+
+.project-bottom-section {
+	position: relative;
+	background-color: $portfolio-background;
+	padding-top: $container-padding-big;
+
+	.triangle {
+	  fill: $project-background;
 	}
 }

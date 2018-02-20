@@ -1,18 +1,21 @@
 $project-padding: 20px;
 
 .portfolio-with-text-container {
-  padding-top: $container-padding;;
   background: $portfolio-background;
-  width: 100vw;
+  padding-top: $container-padding-big;
+  position: relative;
 
   h1, h2 {
     color: $dark-font-color;
+  }
+
+  .triangle {
+    fill: $clients-background;
   }
 }
 
 .portfolio-container {
   background: $portfolio-background;
-  width: 100vw;
 }
 
 .portfolio {

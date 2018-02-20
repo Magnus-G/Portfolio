@@ -4,11 +4,15 @@
 
 .clients-container {
   background: $clients-background;
-  width: 100vw;
+  position: relative;
+
+  .triangle {
+    fill: $what-i-do-background;
+  }
 }
 
 .clients {
-  padding: 7rem;
+  padding: $container-padding;
   text-align: center;
 }
 

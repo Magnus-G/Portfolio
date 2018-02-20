@@ -1,14 +1,10 @@
-.about-top {
-	@include top(beige, $background-color);
-}
-
-.about-bottom {
-	@include top(black, beige);
-}
-
 .what-i-do-container {
 	background: $what-i-do-background;
-  width: 100vw;
+  position: relative;
+
+  .triangle {
+    fill: $hero-background;
+  }
  }
 
 .what-i-do {

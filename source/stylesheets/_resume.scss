@@ -1,12 +1,13 @@
-.top-resume {
-  @include top($resume-background, $portfolio-background);
-}
-
 .resume-container {
-  text-align: center;
-  width: 100vw;
+  width: 100%;
   display: inline-block;
   background: $resume-background;
+  padding-top: $container-padding-big;
+  position: relative;
+
+  .triangle {
+    fill: $portfolio-background;
+  }
 }
 
 .resume {
@@ -19,13 +20,8 @@
     padding: 1em;
   }
 
-
   a {
     color: $dark-font-color;
-  }
-
-  .resume-header {
-    margin: 5em 0;
   }
 
   h6 {
