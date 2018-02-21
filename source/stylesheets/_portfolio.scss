@@ -33,6 +33,11 @@ $project-padding: 20px;
   padding: 2rem 1rem;
   text-decoration: none;
 
+  @media (max-width: $breakpoint) {
+    padding: 0rem 0rem 3rem 0rem;
+    flex-basis: 20rem;
+  }
+
   img {
     box-shadow: 0 1px 3px #00000033;
     margin-bottom: .8rem;

@@ -10,6 +10,10 @@
 .what-i-do {
 	padding: $container-padding;
 	color: $background-color;
+
+  @media (max-width: $breakpoint) {
+    padding: $container-padding-mobile;
+  }
 }
 
 .about-cards {
@@ -45,6 +49,12 @@
     flex-grow: 1;
     color: $background-color;
     font-size: .9rem;
+  }
+
+  .about-card-copy p {
+    @media (max-width: $breakpoint) {
+      margin-bottom: 0;
+    }
   }
   
   .about-card-image {

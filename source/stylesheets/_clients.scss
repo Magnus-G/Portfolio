@@ -14,6 +14,10 @@
 .clients {
   padding: $container-padding;
   text-align: center;
+
+  @media (max-width: $breakpoint) {
+    padding: $container-padding-mobile;
+  }
 }
 
 .logo-section {
@@ -24,11 +28,20 @@
   max-width: 1000px;
   margin: auto;
 
+  @media (max-width: $breakpoint) {
+    padding: 2rem 0rem;
+  }
+
+
   li {
     align-self: center;
     list-style: none;
     padding: 1.2rem;
     text-align: center;
+
+    @media (max-width: $breakpoint) {
+      padding: 1rem;
+    }
 
     img {
       opacity: .5;
@@ -37,14 +50,27 @@
     .square-logo {
       max-height: 6em;
       max-width: 6em; 
+
+      @media (max-width: $breakpoint) {
+        max-height: 4em;
+        max-width: 4em; 
+      }
     }
 
     .wide-logo {
       max-width: 10em;
+
+      @media (max-width: $breakpoint) {
+        max-width: 6em;
+      }
     }
 
     .wider-logo {
       max-width: 15em;
+
+      @media (max-width: $breakpoint) {
+        max-width: 10em;
+      }
     }
   }
 }
