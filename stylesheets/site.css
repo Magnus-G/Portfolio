@@ -477,6 +477,9 @@ textarea {
 .what-i-do {
   padding: 10rem 5rem 5rem 5rem;
   color: #393c3e; }
+  @media (max-width: 680px) {
+    .what-i-do {
+      padding: 9rem 1rem 2rem; } }
 
 .about-cards {
   padding: 0;
@@ -503,6 +506,9 @@ textarea {
     flex-grow: 1;
     color: #393c3e;
     font-size: .9rem; }
+  @media (max-width: 680px) {
+    .about-cards .about-card-copy p {
+      margin-bottom: 0; } }
   .about-cards .about-card-image {
     height: auto;
     overflow: hidden; }
@@ -524,6 +530,9 @@ textarea {
 .clients {
   padding: 10rem 5rem 5rem 5rem;
   text-align: center; }
+  @media (max-width: 680px) {
+    .clients {
+      padding: 9rem 1rem 2rem; } }
 
 .logo-section {
   display: flex;
@@ -532,20 +541,36 @@ textarea {
   padding: 3rem 1rem;
   max-width: 1000px;
   margin: auto; }
+  @media (max-width: 680px) {
+    .logo-section {
+      padding: 2rem 0rem; } }
   .logo-section li {
     align-self: center;
     list-style: none;
     padding: 1.2rem;
     text-align: center; }
+    @media (max-width: 680px) {
+      .logo-section li {
+        padding: 1rem; } }
     .logo-section li img {
       opacity: .5; }
     .logo-section li .square-logo {
       max-height: 6em;
       max-width: 6em; }
+      @media (max-width: 680px) {
+        .logo-section li .square-logo {
+          max-height: 4em;
+          max-width: 4em; } }
     .logo-section li .wide-logo {
       max-width: 10em; }
+      @media (max-width: 680px) {
+        .logo-section li .wide-logo {
+          max-width: 6em; } }
     .logo-section li .wider-logo {
       max-width: 15em; }
+      @media (max-width: 680px) {
+        .logo-section li .wider-logo {
+          max-width: 10em; } }
 
 .portfolio-with-text-container {
   background: #fbfbf3;
@@ -571,6 +596,10 @@ textarea {
   flex-basis: 18rem;
   padding: 2rem 1rem;
   text-decoration: none; }
+  @media (max-width: 680px) {
+    .project-item {
+      padding: 0rem 0rem 3rem 0rem;
+      flex-basis: 20rem; } }
   .project-item img {
     box-shadow: 0 1px 3px #00000033;
     margin-bottom: .8rem; }
@@ -834,6 +863,9 @@ h1 {
   margin: 0 auto 1rem;
   font-weight: 100;
   text-align: center; }
+  @media (max-width: 680px) {
+    h1 {
+      font-size: 1.4rem; } }
 
 h2 {
   margin: 0 auto 3rem;
@@ -842,6 +874,11 @@ h2 {
   text-align: center;
   font-weight: 100;
   line-height: 1.4; }
+  @media (max-width: 680px) {
+    h2 {
+      font-size: 1.2rem;
+      margin: 0 auto 2rem;
+      padding: 0 1rem; } }
 
 p {
   font-family: "Merriweather", serif;
