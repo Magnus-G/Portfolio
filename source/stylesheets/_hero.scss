@@ -4,7 +4,7 @@
   
 .hero-header {
   max-width: 660px;
-  padding-top: $container-padding-small;
+  padding-top: $container-padding-small * 2;
   margin: 0 auto 4rem;
   
   @media (max-width: $breakpoint) {
@@ -83,36 +83,36 @@
     font-weight: 600;
   }
 
-  a {
-    font-family: $font-header;
-    text-transform: uppercase;
-    letter-spacing: .3px;
-    color: #393c3e;
-    text-decoration: none;
-    padding: .1rem .6rem;
-    font-size: 0.9rem;
-    box-shadow: 0 2px 8px #00000033;
+  // a {
+  //   font-family: $font-header;
+  //   text-transform: uppercase;
+  //   letter-spacing: .3px;
+  //   color: #393c3e;
+  //   text-decoration: none;
+  //   padding: .1rem .6rem;
+  //   font-size: 0.9rem;
+  //   box-shadow: 0 2px 8px #00000033;
 
-    @media (max-width: $breakpoint) {
-      display: inline-block;
-      margin-bottom: 1rem;
-      padding-bottom: .3rem;
-    }
-  }
+  //   @media (max-width: $breakpoint) {
+  //     display: inline-block;
+  //     margin-bottom: 1rem;
+  //     padding-bottom: .3rem;
+  //   }
+  // }
 
-  .what-link {
-    background: $yellowish;
-  }
-  .clients-link {
-    background: #A9D7FF;
-  }
-  .portfolio-link {
-    background: #FF7D66;
-  }
-  .resume-link {
-    background: $resume-background;
-  }
-  .contact-link {
-    background: lighten($contact-background, 45);
-  }
+  // .what-link {
+  //   background: $yellowish;
+  // }
+  // .clients-link {
+  //   background: #A9D7FF;
+  // }
+  // .portfolio-link {
+  //   background: #FF7D66;
+  // }
+  // .resume-link {
+  //   background: $resume-background;
+  // }
+  // .contact-link {
+  //   background: lighten($contact-background, 45);
+  // }
 }

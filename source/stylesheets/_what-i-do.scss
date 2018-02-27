@@ -58,11 +58,12 @@
   }
   
   .about-card-image {
-    height: auto;
+    height: 6rem;
     overflow: hidden;
+    text-align: center;
 
     img {
-      width: 100%;
+      width: 4rem;
     }
   }
 }
