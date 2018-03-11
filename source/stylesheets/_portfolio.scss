@@ -26,6 +26,9 @@ $project-padding: 20px;
   max-width: 1200px;
   margin: auto;
 
+  @media (max-width: $breakpoint) {
+    padding: 1rem;
+  }
 }
 
 .project-item {
@@ -58,69 +61,3 @@ $project-padding: 20px;
     margin-bottom: 0.1rem;
   }
 }
-
-
-// $project-padding: 20px;
-
-// .project {
-//   padding: $vertical-space*1.2 0;
-//   margin: 0;
-
-//   h2 {
-//     font-family: 'Oswald', sans-serif;
-//     font-size: 2.3em;
-//     margin-bottom: $vertical-space;
-//     margin-top: 1em;
-
-//     @media (max-width: $breakpoint) {
-//       font-size: 1.3em;
-//     }
-//   }
-
-//   h4 {
-//     background: pink;
-//     color: $hero-color;
-//     font-size: 0.8em;
-//     padding: .4em .8em;
-//     display: inline-block;
-//     margin-bottom: 0;
-//   }
-
-//   .project-text {
-//     max-width: $max-width;
-//     margin: $vertical-space*2 auto;
-//     margin-bottom: $vertical-space * 3;
-//     border-bottom: 2px dashed transparentize($font-color, 0.8);
-//     padding-bottom: 1em;
-
-//     @media (max-width: $breakpoint) {
-//       max-width: auto;
-//       margin: $vertical-space auto;
-//       padding: 1em;
-//     }
-//   }
-
-//   .images {
-//     max-width: $max-width;
-//     margin: auto;
-//     display: block;
-//     box-shadow: 0 0px 3px transparentize(black, 0.5);
-    
-//     img {
-//       height: 400px;
-//       @media (max-width: $breakpoint) {
-//         height: auto;
-//       }
-//     }
-//   }
-
-//   #slidr-div {
-//     height: 400px;
-//   }
-// }
-
-// .slick-slider button.slick-arrow {
-//   @media (max-width: $breakpoint) {
-//     display: none !important;
-//   }
-// }

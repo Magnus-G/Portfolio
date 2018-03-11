@@ -11,6 +11,9 @@
 }
 
 $breakpoint: 680px;
+$hero-first-breakpoint: 900px;
+$resume-breakpoint: 500px;
+
 $background-color: #393c3e;
 
 $body-color: black;
@@ -21,7 +24,7 @@ $clients-background: black;
 $portfolio-background: #fbfbf3;
 $project-background: #efefe7;
 $resume-background: #ffced6;
-$contact-background: #455245;
+$contact-background: #3b3e3a;
 
 $what-i-do-max-width: 900px;
 $yellowish: beige;
@@ -31,7 +34,6 @@ $vertical-space: 1rem;
 $light-font-color: #E2DDC5;
 $dark-font-color: #393c3e;
 $max-width: 666px;
-$resume-breakpoint: 500px;
 
 $container-padding-small: 5rem;
 $container-padding-big: 10rem;
@@ -61,7 +63,7 @@ $font-serif: 'Merriweather', serif;
 // triangle
 svg {
   position: absolute;
-  top: 0px;
+  top: -1px;
   width: 100%;
   height: 100px;
 }

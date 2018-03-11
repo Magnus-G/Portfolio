@@ -1,13 +1,13 @@
 .navigation {
-  $large-screen: 50em !default;
-  $medium-screen: 30em !default;
+  $medium-screen: 45em !default;
 
-  background-color: transparentize(white, 0.92);
+  background-color: black;
   box-shadow: 0 2px 2px transparentize(black, 0.95);
   padding: .8rem;
   position: fixed;
   z-index: 2;
   width: 100%;
+  min-width: 320px;
 
   // Mobile view
   .navigation-menu-button {
@@ -33,14 +33,18 @@
   }
 
   h1 {
-    font-size: 1rem;
-    text-align: left;
-    float: left;
-    font-weight: 400;
-    letter-spacing: .3px;
-    text-shadow: 0 1px 1px transparentize(black, 0.7);
-    margin-bottom: 0;
-    font-family: $font-small-header;
+    margin: 0;
+    a {
+      font-size: 1rem;
+      text-align: left;
+      color: white;
+      float: left;
+      font-weight: 400;
+      letter-spacing: .3px;
+      text-shadow: 0 1px 1px transparentize(black, 0.7);
+      margin-bottom: 0;
+      font-family: $font-small-header;
+    }
   }
 
   nav {
@@ -59,7 +63,7 @@
     display: none;
     margin: 0 auto;
     overflow: visible;
-    padding: 0;
+    padding: 1rem 0 0 0;
     width: 100%;
 
     @media (min-width: $medium-screen) {
@@ -76,7 +80,7 @@
   // Nav items
   ul li.nav-link {
     display: block;
-    text-align: right;
+    text-align: center;
     width: 100%;
 
     @media (min-width: $medium-screen) {
@@ -92,8 +96,8 @@
   }
 
   a {
-    font-family: $font-header;
     font-family: $font-small-header;
+    font-family: $font-header;
     font-weight: 400;
     letter-spacing: .3px;
     text-transform: uppercase;
@@ -102,7 +106,7 @@
     padding: .08rem .6rem;
     font-size: 0.9rem;
 
-    @media (max-width: $breakpoint) {
+    @media (max-width: $medium-screen) {
       display: inline-block;
       margin-bottom: 1rem;
       padding-bottom: .3rem;
@@ -116,12 +120,12 @@
     background: #A9D7FF;
   }
   .portfolio-link {
-    background: #FF7D66;
+    background: $portfolio-background;
   }
   .resume-link {
     background: $resume-background;
   }
   .contact-link {
-    background: lighten($contact-background, 45);
+    background: $yellowish;
   }
 }

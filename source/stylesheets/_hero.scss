@@ -2,20 +2,24 @@
   background: $hero-background;
 }
   
-.hero-header {
-  max-width: 660px;
-  padding-top: $container-padding-small * 2;
-  margin: 0 auto 4rem;
-  
-  @media (max-width: $breakpoint) {
-    padding-top: 3rem;
-    margin: 0 auto 2rem;
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  padding: ($container-padding-small * 2) 0 $container-padding-small;
+  margin: 0 auto;
+  max-width: 950px;
+
+  @media (max-width: $hero-first-breakpoint) {
+    flex-direction: column-reverse;
+    padding: 6rem 1rem 2rem;
     text-align: center;
   }
-  
+}
+
+.hero-header {
   h3 {
     font-family: norwester;
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin: 0;
@@ -24,95 +28,55 @@
     display: inline-block;
     padding: .2rem .9rem;
 
-    @media (max-width: $breakpoint) {
+    @media (max-width: $hero-first-breakpoint) {
       font-size: 1.5rem;
       letter-spacing: 1px;
     }
   }
-}
-
-.hero {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  max-width: 660px;
-  margin: auto;
-  padding-bottom: $container-padding-small;
-
-  @media (max-width: $breakpoint) {
-    flex-direction: column;
-    padding-bottom: 1rem;
-  }
-
-  img {
-    width: 13rem;
-    height: 13rem;
-    border-radius: 12rem;
-    border: 2px solid white;
-    padding: .2rem;
-    margin: 0 2rem 0 0;
-    box-shadow: 0 2px 8px #00000033;
-
-    @media (max-width: $breakpoint) {
-      margin: auto;
-      width: 7rem;
-      height: 7rem;
-    }
-  }
-
-  .hero-text {
-    padding-top: 1.5rem;
-
-    @media (max-width: $breakpoint) {
-      text-align: center;
-      padding: 1.5rem 1rem;
-    }
-  }
-
-  h1 {
-    text-transform: uppercase;
-    border-bottom: 2px solid #E2DDC5;
-    display: inline-block;
-    font-size: 0.8rem;
-    font-family: 'helvetica';
-    margin: 0 0 .5rem;
-  }
 
   p {
-    font-family: helvetica;
-    font-weight: 600;
+    border-top: 3px solid tomato;
+    padding-top: .6rem;
+    margin-top: 2rem;
+    max-width: 530px;
+    font-size: 1.1rem;
+    font-style: italic;
+    
+    @media (max-width: $hero-first-breakpoint) {
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 2rem auto 0;
+    }
+
+    span {
+      font-family: $font-header;
+      font-style: normal;
+      text-transform: lowercase;
+    }
   }
-
-  // a {
-  //   font-family: $font-header;
-  //   text-transform: uppercase;
-  //   letter-spacing: .3px;
-  //   color: #393c3e;
-  //   text-decoration: none;
-  //   padding: .1rem .6rem;
-  //   font-size: 0.9rem;
-  //   box-shadow: 0 2px 8px #00000033;
-
-  //   @media (max-width: $breakpoint) {
-  //     display: inline-block;
-  //     margin-bottom: 1rem;
-  //     padding-bottom: .3rem;
-  //   }
-  // }
-
-  // .what-link {
-  //   background: $yellowish;
-  // }
-  // .clients-link {
-  //   background: #A9D7FF;
-  // }
-  // .portfolio-link {
-  //   background: #FF7D66;
-  // }
-  // .resume-link {
-  //   background: $resume-background;
-  // }
-  // .contact-link {
-  //   background: lighten($contact-background, 45);
-  // }
 }
+
+.mugshot {
+  width: 20rem;
+  height: 20rem;
+  
+  @media (max-width: $hero-first-breakpoint) {
+    width: 11rem;
+    height: 11rem;
+    margin: 0 auto 2rem;
+  }
+}
+
+.photo {
+  border-radius: 12rem;
+  border: 2px solid $what-i-do-background;
+  padding: .2rem;
+  margin: 0 2rem 0 0;
+  box-shadow: 0 2px 8px #00000033;
+
+  @media (max-width: $hero-first-breakpoint) {
+    margin: auto;
+  }
+}
+
+
