@@ -6,7 +6,7 @@
   src: url("../fonts/norwester.otf"); }
 svg {
   position: absolute;
-  top: 0px;
+  top: -1px;
   width: 100%;
   height: 100px; }
 
@@ -377,18 +377,19 @@ textarea {
   /* 2 */ }
 
 .navigation {
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: black;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
   padding: .8rem;
   position: fixed;
   z-index: 2;
-  width: 100%; }
+  width: 100%;
+  min-width: 320px; }
   .navigation .navigation-menu-button {
     display: block;
     float: right;
     margin: 0;
     padding-top: 0.5em; }
-    @media (min-width: 30em) {
+    @media (min-width: 45em) {
       .navigation .navigation-menu-button {
         display: none; } }
   .navigation .navigation-wrapper {
@@ -398,17 +399,20 @@ textarea {
       content: "";
       display: table; }
   .navigation h1 {
-    font-size: 1rem;
-    text-align: left;
-    float: left;
-    font-weight: 400;
-    letter-spacing: .3px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-    margin-bottom: 0;
-    font-family: "Oswald", helvetica, sans-serif; }
+    margin: 0; }
+    .navigation h1 a {
+      font-size: 1rem;
+      text-align: left;
+      color: white;
+      float: left;
+      font-weight: 400;
+      letter-spacing: .3px;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+      margin-bottom: 0;
+      font-family: "Oswald", helvetica, sans-serif; }
   .navigation nav {
     float: none; }
-    @media (min-width: 30em) {
+    @media (min-width: 45em) {
       .navigation nav {
         float: right;
         text-align: center;
@@ -419,9 +423,9 @@ textarea {
     display: none;
     margin: 0 auto;
     overflow: visible;
-    padding: 0;
+    padding: 1rem 0 0 0;
     width: 100%; }
-    @media (min-width: 30em) {
+    @media (min-width: 45em) {
       .navigation ul.navigation-menu {
         display: block;
         margin: 0;
@@ -430,9 +434,9 @@ textarea {
       display: block; }
   .navigation ul li.nav-link {
     display: block;
-    text-align: right;
+    text-align: center;
     width: 100%; }
-    @media (min-width: 30em) {
+    @media (min-width: 45em) {
       .navigation ul li.nav-link {
         background: transparent;
         display: inline;
@@ -441,8 +445,8 @@ textarea {
   .navigation li.nav-link a {
     display: inline-block; }
   .navigation a {
-    font-family: "norwester", helvetica, sans-serif;
     font-family: "Oswald", helvetica, sans-serif;
+    font-family: "norwester", helvetica, sans-serif;
     font-weight: 400;
     letter-spacing: .3px;
     text-transform: uppercase;
@@ -450,7 +454,7 @@ textarea {
     text-decoration: none;
     padding: .08rem .6rem;
     font-size: 0.9rem; }
-    @media (max-width: 680px) {
+    @media (max-width: 45em) {
       .navigation a {
         display: inline-block;
         margin-bottom: 1rem;
@@ -460,79 +464,76 @@ textarea {
   .navigation .clients-link {
     background: #A9D7FF; }
   .navigation .portfolio-link {
-    background: #FF7D66; }
+    background: #fbfbf3; }
   .navigation .resume-link {
     background: #ffced6; }
   .navigation .contact-link {
-    background: #b9c4b9; }
+    background: beige; }
 
 .hero-container {
   background: #393c3e; }
 
-.hero-header {
-  max-width: 660px;
-  padding-top: 10rem;
-  margin: 0 auto 4rem; }
-  @media (max-width: 680px) {
-    .hero-header {
-      padding-top: 3rem;
-      margin: 0 auto 2rem;
-      text-align: center; } }
-  .hero-header h3 {
-    font-family: norwester;
-    font-size: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin: 0;
-    font-weight: 100;
-    background: #252525;
-    display: inline-block;
-    padding: .2rem .9rem; }
-    @media (max-width: 680px) {
-      .hero-header h3 {
-        font-size: 1.5rem;
-        letter-spacing: 1px; } }
-
-.hero {
+.hero-content {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  max-width: 660px;
-  margin: auto;
-  padding-bottom: 5rem; }
-  @media (max-width: 680px) {
-    .hero {
-      flex-direction: column;
-      padding-bottom: 1rem; } }
-  .hero img {
-    width: 13rem;
-    height: 13rem;
-    border-radius: 12rem;
-    border: 2px solid white;
-    padding: .2rem;
-    margin: 0 2rem 0 0;
-    box-shadow: 0 2px 8px #00000033; }
-    @media (max-width: 680px) {
-      .hero img {
-        margin: auto;
-        width: 7rem;
-        height: 7rem; } }
-  .hero .hero-text {
-    padding-top: 1.5rem; }
-    @media (max-width: 680px) {
-      .hero .hero-text {
-        text-align: center;
-        padding: 1.5rem 1rem; } }
-  .hero h1 {
-    text-transform: uppercase;
-    border-bottom: 2px solid #E2DDC5;
-    display: inline-block;
-    font-size: 0.8rem;
-    font-family: 'helvetica';
-    margin: 0 0 .5rem; }
-  .hero p {
-    font-family: helvetica;
-    font-weight: 600; }
+  justify-content: space-between;
+  padding: 10rem 0 5rem;
+  margin: 0 auto;
+  max-width: 950px; }
+  @media (max-width: 900px) {
+    .hero-content {
+      flex-direction: column-reverse;
+      padding: 6rem 1rem 2rem;
+      text-align: center; } }
+
+.hero-header h3 {
+  font-family: norwester;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0;
+  font-weight: 100;
+  background: #252525;
+  display: inline-block;
+  padding: .2rem .9rem; }
+  @media (max-width: 900px) {
+    .hero-header h3 {
+      font-size: 1.5rem;
+      letter-spacing: 1px; } }
+.hero-header p {
+  border-top: 3px solid tomato;
+  padding-top: .6rem;
+  margin-top: 2rem;
+  max-width: 530px;
+  font-size: 1.1rem;
+  font-style: italic; }
+  @media (max-width: 900px) {
+    .hero-header p {
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 2rem auto 0; } }
+  .hero-header p span {
+    font-family: "norwester", helvetica, sans-serif;
+    font-style: normal;
+    text-transform: lowercase; }
+
+.mugshot {
+  width: 20rem;
+  height: 20rem; }
+  @media (max-width: 900px) {
+    .mugshot {
+      width: 11rem;
+      height: 11rem;
+      margin: 0 auto 2rem; } }
+
+.photo {
+  border-radius: 12rem;
+  border: 2px solid beige;
+  padding: .2rem;
+  margin: 0 2rem 0 0;
+  box-shadow: 0 2px 8px #00000033; }
+  @media (max-width: 900px) {
+    .photo {
+      margin: auto; } }
 
 .what-i-do-container {
   background: beige;
@@ -658,6 +659,9 @@ textarea {
   padding-bottom: 6rem;
   max-width: 1200px;
   margin: auto; }
+  @media (max-width: 680px) {
+    .portfolio {
+      padding: 1rem; } }
 
 .project-item {
   flex-basis: 18rem;
@@ -684,6 +688,9 @@ textarea {
   top: 5rem;
   left: 2rem;
   z-index: 2; }
+  @media (max-width: 680px) {
+    .back-arrow {
+      display: none; } }
   .back-arrow img {
     height: 2.5rem;
     width: 2.5rem;
@@ -697,6 +704,9 @@ textarea {
   max-width: 666px;
   padding-top: 5rem;
   margin: 0 auto; }
+  @media (max-width: 680px) {
+    .project-container {
+      padding: 5rem 1rem 0; } }
   .project-container img {
     box-shadow: 0 1px 3px #00000039; }
   .project-container h1 {
@@ -712,14 +722,21 @@ textarea {
     font-weight: 400;
     font-size: 1rem;
     margin-top: 2rem; }
+    @media (max-width: 680px) {
+      .project-container h3 {
+        margin-top: .7rem; } }
   .project-container p, .project-container a {
     color: #393c3e;
     font-size: 1.1rem;
     margin-bottom: 3rem; }
+    @media (max-width: 680px) {
+      .project-container p, .project-container a {
+        font-size: 0.9rem;
+        margin-bottom: 2rem; } }
   .project-container .project-end {
     height: 3px;
     width: 46px;
-    background-color: #393c3e85; }
+    background-color: transparent; }
 
 .project-bottom-section {
   position: relative;
@@ -876,7 +893,7 @@ textarea {
       line-height: 1.5; }
 
 .contact {
-  background-color: #455245;
+  background-color: #3b3e3a;
   position: relative; }
   .contact .triangle {
     fill: #ffced6; }
@@ -885,7 +902,7 @@ textarea {
   position: relative;
   min-height: 25rem;
   padding-top: 10rem;
-  background-color: #455245; }
+  background-color: #3b3e3a; }
   .contact-content a {
     font-family: "norwester", helvetica, sans-serif;
     color: #ea5555;
@@ -908,7 +925,7 @@ textarea {
 .up-link {
   font-family: "norwester", helvetica, sans-serif;
   text-transform: uppercase;
-  color: #2e362e; }
+  color: #222421; }
 
 .project-bottom-section .contact-content .triangle {
   fill: #fbfbf3; }
