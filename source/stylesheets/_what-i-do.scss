@@ -78,9 +78,15 @@
     border-radius: 50%;
     overflow: hidden;
     text-align: center;
+    background-color: #cdfffe;
+
+    @media (max-width: $breakpoint) {
+      height: 6rem;
+      width: 6rem;
+    }
 
     img {
-      width: 4rem;
+      width: 3rem;
     }
   }
 }

@@ -18,6 +18,7 @@
 .project {
 	background: $project-background;
 	width: 100vw;
+	padding-bottom: 8rem;
 }
 
 .project-container {
@@ -75,9 +76,13 @@
 .project-bottom-section {
 	position: relative;
 	background-color: $portfolio-background;
-	padding-top: $container-padding-big;
-
-	.triangle {
-	  fill: $project-background;
+	
+	.portfolio {
+		padding-top: 6rem;
 	}
+}
+
+.project-triangle {
+	height: 100px;
+	margin-top: -100px;
 }
