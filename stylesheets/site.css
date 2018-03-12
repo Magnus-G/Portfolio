@@ -579,15 +579,20 @@ textarea {
     justify-content: center;
     border-radius: 50%;
     overflow: hidden;
-    text-align: center; }
+    text-align: center;
+    background-color: #cdfffe; }
+    @media (max-width: 680px) {
+      .about-cards .about-card-image {
+        height: 6rem;
+        width: 6rem; } }
     .about-cards .about-card-image img {
-      width: 4rem; }
+      width: 3rem; }
 
 .bottom-clients {
   height: 0;
   border-style: solid;
   border-width: 100px 0 0;
-  border-color: black transparent transparent #edfafa; }
+  border-color: black transparent transparent #f5ffff; }
 
 .clients-container {
   background: black;
@@ -641,7 +646,7 @@ textarea {
           max-width: 10em; } }
 
 .portfolio-with-text-container {
-  background: #edfafa;
+  background: #f5ffff;
   padding-top: 10rem;
   position: relative; }
   .portfolio-with-text-container h1, .portfolio-with-text-container h2 {
@@ -650,7 +655,7 @@ textarea {
     fill: black; }
 
 .portfolio-container {
-  background: #edfafa; }
+  background: #f5ffff; }
 
 .portfolio {
   display: flex;
@@ -698,7 +703,8 @@ textarea {
 
 .project {
   background: white;
-  width: 100vw; }
+  width: 100vw;
+  padding-bottom: 8rem; }
 
 .project-container {
   max-width: 666px;
@@ -740,10 +746,13 @@ textarea {
 
 .project-bottom-section {
   position: relative;
-  background-color: #edfafa;
-  padding-top: 10rem; }
-  .project-bottom-section .triangle {
-    fill: white; }
+  background-color: #f5ffff; }
+  .project-bottom-section .portfolio {
+    padding-top: 6rem; }
+
+.project-triangle {
+  height: 100px;
+  margin-top: -100px; }
 
 .resume-container {
   width: 100%;
@@ -752,7 +761,7 @@ textarea {
   padding-top: 10rem;
   position: relative; }
   .resume-container .triangle {
-    fill: #edfafa; }
+    fill: #f5ffff; }
 
 .resume {
   color: #131515;
@@ -929,7 +938,7 @@ textarea {
   text-decoration: none; }
 
 .project-bottom-section .contact-content .triangle {
-  fill: #edfafa; }
+  fill: #f5ffff; }
 
 body, html {
   -webkit-font-smoothing: antialiased;
