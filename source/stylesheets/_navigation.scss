@@ -1,7 +1,7 @@
 .navigation {
   $medium-screen: 45em !default;
 
-  background-color: black;
+  background-color: #131515;
   box-shadow: 0 2px 2px transparentize(black, 0.95);
   padding: .8rem;
   position: fixed;
@@ -37,7 +37,7 @@
     a {
       font-size: 1rem;
       text-align: left;
-      color: white;
+      color: #82eceb;
       float: left;
       font-weight: 400;
       letter-spacing: .3px;
@@ -101,31 +101,19 @@
     font-weight: 400;
     letter-spacing: .3px;
     text-transform: uppercase;
-    color: #393c3e;
+    color: #278684;
     text-decoration: none;
     padding: .08rem .6rem;
     font-size: 0.9rem;
+
+    &:hover {
+      color: lighten(#44807f, 10);
+    }
 
     @media (max-width: $medium-screen) {
       display: inline-block;
       margin-bottom: 1rem;
       padding-bottom: .3rem;
     }
-  }
-
-  .what-link {
-    background: $yellowish;
-  }
-  .clients-link {
-    background: #A9D7FF;
-  }
-  .portfolio-link {
-    background: $portfolio-background;
-  }
-  .resume-link {
-    background: $resume-background;
-  }
-  .contact-link {
-    background: $yellowish;
   }
 }

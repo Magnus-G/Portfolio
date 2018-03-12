@@ -18,15 +18,15 @@
 
 .hero-header {
   h3 {
-    font-family: norwester;
+    font-family: $font-viga;
     font-size: 3.5rem;
     text-transform: uppercase;
-    letter-spacing: 3px;
     margin: 0;
+    color: #82eceb;
     font-weight: 100;
-    background: #252525;
     display: inline-block;
-    padding: .2rem .9rem;
+    padding: .2rem 0;
+    border-bottom: 7px solid $red;
 
     @media (max-width: $hero-first-breakpoint) {
       font-size: 1.5rem;
@@ -35,10 +35,10 @@
   }
 
   p {
-    border-top: 3px solid tomato;
     padding-top: .6rem;
     margin-top: 2rem;
     max-width: 530px;
+    color: $what-i-do-background;
     font-size: 1.1rem;
     font-style: italic;
     
@@ -49,7 +49,8 @@
     }
 
     span {
-      font-family: $font-header;
+      // font-family: $font-header;
+      font-weight: 800;
       font-style: normal;
       text-transform: lowercase;
     }
@@ -69,10 +70,9 @@
 
 .photo {
   border-radius: 12rem;
-  border: 2px solid $what-i-do-background;
-  padding: .2rem;
+  border: 5px solid #82eceb;
+  padding: .4rem;
   margin: 0 2rem 0 0;
-  box-shadow: 0 2px 8px #00000033;
 
   @media (max-width: $hero-first-breakpoint) {
     margin: auto;

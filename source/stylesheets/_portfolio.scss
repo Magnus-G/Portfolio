@@ -50,13 +50,13 @@ $project-padding: 20px;
   }
 
   h3, h4 {
-    color: $background-color;
+    color: $dark-font-color;
     font-size: .7rem;
     margin: 0;
   }
 
   h3 {
-    color: transparentize($background-color, 0.5);
+    color: transparentize($dark-font-color, 0.5);
     font-weight: 400;
     margin-bottom: 0.1rem;
   }

@@ -1,8 +1,8 @@
-@font-face {
-  font-family: 'peace';
-  src: url('../fonts/peace.otf');
-  // din.otf in folder source > fonts
-}
+// @font-face {
+//   font-family: 'peace';
+//   src: url('../fonts/peace.otf');
+//   // din.otf in folder source > fonts
+// }
 
 @font-face {
   font-family: 'norwester';
@@ -14,21 +14,20 @@ $breakpoint: 680px;
 $hero-first-breakpoint: 900px;
 $resume-breakpoint: 500px;
 
-$background-color: #393c3e;
 
-$body-color: black;
 
-$hero-background: $background-color;
-$what-i-do-background: beige;
+$hero-background: #141919;
+$body-color: $hero-background;
+$what-i-do-background: #d7fffe;
 $clients-background: black;
-$portfolio-background: #fbfbf3;
-$project-background: #efefe7;
-$resume-background: #ffced6;
-$contact-background: #3b3e3a;
+$portfolio-background: #f5ffff;
+$project-background: white;
+$resume-background: #ffdddc;
+$contact-background: $hero-background;
 
 $what-i-do-max-width: 900px;
 $yellowish: beige;
-$what-i-do-background: $yellowish;
+$red: #f36d6d;
 
 $vertical-space: 1rem;
 $light-font-color: #E2DDC5;
@@ -42,6 +41,7 @@ $container-padding-mobile: 9rem 1rem 2rem;
 
 $container-padding: 10rem 5rem 5rem 5rem;
 
+$font-viga: 'Viga', sans-serif;
 $font-header: 'norwester', helvetica, sans-serif;
 $font-small-header: 'Oswald', helvetica, sans-serif;
 $font-serif: 'Merriweather', serif;
@@ -101,8 +101,10 @@ a {
 }
 
 h1 {
+  font-family: $font-viga;
   font-family: $font-header;
   text-transform: uppercase;
+  letter-spacing: -.5px;
   margin: 0 auto 1rem;
   font-weight: 100;
   text-align: center;
