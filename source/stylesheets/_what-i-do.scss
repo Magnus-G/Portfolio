@@ -24,7 +24,7 @@
   color: $light-font-color;
   flex-flow: row wrap;
   margin: auto;
-  max-width: $what-i-do-max-width;
+  max-width: 960px;
 
 	p {
 		font-size: 0.9rem;
@@ -37,7 +37,7 @@
   }
 
   .about-cards-box-wrap {
-    flex-basis: 10rem;
+    flex-basis: 14rem;
     flex-grow: 1;
     flex-shrink: 0;
     overflow: hidden;
@@ -57,7 +57,7 @@
   }
 
   .about-card {
-    flex-basis: 20em;
+    // flex-basis: 20em;
     flex-grow: 1;
     color: $dark-font-color;
     font-size: .9rem;
