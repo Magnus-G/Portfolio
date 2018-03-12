@@ -385,7 +385,8 @@ textarea {
     display: block;
     float: right;
     margin: 0;
-    padding-top: 0.5em; }
+    line-height: 1.3;
+    font-size: 1rem; }
     @media (min-width: 45em) {
       .navigation .navigation-menu-button {
         display: none; } }
@@ -403,6 +404,7 @@ textarea {
       color: #82eceb;
       float: left;
       font-weight: 400;
+      line-height: 1.3;
       letter-spacing: .3px;
       text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
       margin-bottom: 0;
@@ -543,7 +545,7 @@ textarea {
   color: #d7fffe;
   flex-flow: row wrap;
   margin: auto;
-  max-width: 900px; }
+  max-width: 960px; }
   .about-cards p {
     font-size: 0.9rem; }
   .about-cards span {
@@ -551,7 +553,7 @@ textarea {
     text-transform: lowercase;
     letter-spacing: 0.5px; }
   .about-cards .about-cards-box-wrap {
-    flex-basis: 10rem;
+    flex-basis: 14rem;
     flex-grow: 1;
     flex-shrink: 0;
     overflow: hidden;
@@ -563,7 +565,6 @@ textarea {
     .about-cards .about-cards-box-wrap:nth-child(3) .about-card-image {
       border: 4px solid #6bd8f4; }
   .about-cards .about-card {
-    flex-basis: 20em;
     flex-grow: 1;
     color: #131515;
     font-size: .9rem; }
@@ -586,7 +587,7 @@ textarea {
   height: 0;
   border-style: solid;
   border-width: 100px 0 0;
-  border-color: black transparent transparent #f5ffff; }
+  border-color: black transparent transparent #edfafa; }
 
 .clients-container {
   background: black;
@@ -620,7 +621,7 @@ textarea {
       .logo-section li {
         padding: 1rem; } }
     .logo-section li img {
-      opacity: .5; }
+      opacity: .8; }
     .logo-section li .square-logo {
       max-height: 6em;
       max-width: 6em; }
@@ -640,7 +641,7 @@ textarea {
           max-width: 10em; } }
 
 .portfolio-with-text-container {
-  background: #f5ffff;
+  background: #edfafa;
   padding-top: 10rem;
   position: relative; }
   .portfolio-with-text-container h1, .portfolio-with-text-container h2 {
@@ -649,7 +650,7 @@ textarea {
     fill: black; }
 
 .portfolio-container {
-  background: #f5ffff; }
+  background: #edfafa; }
 
 .portfolio {
   display: flex;
@@ -739,7 +740,7 @@ textarea {
 
 .project-bottom-section {
   position: relative;
-  background-color: #f5ffff;
+  background-color: #edfafa;
   padding-top: 10rem; }
   .project-bottom-section .triangle {
     fill: white; }
@@ -751,7 +752,7 @@ textarea {
   padding-top: 10rem;
   position: relative; }
   .resume-container .triangle {
-    fill: #f5ffff; }
+    fill: #edfafa; }
 
 .resume {
   color: #131515;
@@ -928,7 +929,7 @@ textarea {
   text-decoration: none; }
 
 .project-bottom-section .contact-content .triangle {
-  fill: #f5ffff; }
+  fill: #edfafa; }
 
 body, html {
   -webkit-font-smoothing: antialiased;
