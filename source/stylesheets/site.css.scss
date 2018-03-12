@@ -28,10 +28,11 @@ $contact-background: $hero-background;
 $what-i-do-max-width: 900px;
 $yellowish: beige;
 $red: #f36d6d;
+$dark: #131515;
 
 $vertical-space: 1rem;
-$light-font-color: #E2DDC5;
-$dark-font-color: #393c3e;
+$light-font-color: $what-i-do-background;
+$dark-font-color: $dark;
 $max-width: 666px;
 
 $container-padding-small: 5rem;

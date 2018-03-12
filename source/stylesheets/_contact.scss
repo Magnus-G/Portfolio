@@ -15,11 +15,11 @@
 
 	a {
 		font-family: $font-header;
-		color: $red;
+		color: #278684;
 		font-size: 1.2rem;
 		text-decoration: none;
 		text-transform: uppercase;
-		background-color: $yellowish;
+		background-color: $what-i-do-background;
 		padding: 1.2rem 2rem;
 		border-radius: 4px;
 		letter-spacing: .6px;
@@ -39,7 +39,7 @@
 .up-link {
 	font-family: $font-header;	
 	text-transform: uppercase;
-	color: lighten($contact-background, 10);
+	color: #278684;
 	text-decoration: none;
 }
 
