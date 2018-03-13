@@ -103,6 +103,14 @@ $sans-2: 'Source Sans Pro', sans-serif;
       margin: 0 0 .5em;
     }
 
+    h6 { // date
+      color: $resume-font-color;
+      font-size: $resume-font-size;
+      font-weight: 400;
+      font-family: $serif;
+      margin: 0 0 .5em;
+    }
+
     p {
       color: $resume-font-color;
       font-size: $resume-font-size;
