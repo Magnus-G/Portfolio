@@ -3,7 +3,7 @@
   src: url("../fonts/norwester.otf"); }
 svg {
   position: absolute;
-  top: -1px;
+  top: -.5px;
   width: 100%;
   height: 100px; }
   @media (max-width: 680px) {
@@ -476,7 +476,7 @@ textarea {
   @media (max-width: 900px) {
     .hero-content {
       flex-direction: column-reverse;
-      padding: 6rem 1rem 2rem;
+      padding: 6rem 1rem;
       text-align: center; } }
 
 .hero-header h3 {
@@ -931,6 +931,10 @@ textarea {
     padding: 1.2rem 2rem;
     border-radius: 4px;
     letter-spacing: .6px; }
+    @media (max-width: 680px) {
+      .contact-content a {
+        font-size: 1rem;
+        padding: 1rem 1.2rem; } }
 
 .contact-content-text {
   text-align: center;
