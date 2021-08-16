@@ -18,6 +18,15 @@ $(document).ready(function() {
 
 ///////
 
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    var divToHide = document.getElementById('js-navigation-menu');
+    divToHide.style.display = 'none';
+  } else {
+    divToHide.style.display = 'block';
+  }
+}
+
 (function (jQuery) {
   jQuery.mark = {
     jump: function (options) {
@@ -33,11 +42,24 @@ $(document).ready(function() {
         var jumpobj = jQuery(this);
         var target = jumpobj.attr('href');
         var thespeed = 1000;
+
+
+
+
+
+
+
+
         var offset = jQuery(target).offset().top;
         jQuery('html,body').animate({
           scrollTop: offset
         }, thespeed, 'swing');
         e.preventDefault();
+        
+        var x = window.matchMedia("(max-width: 720px)")
+        myFunction(x) // Call listener function at run time
+        x.addListener(myFunction) // Attach listener function on state changes
+
       });
     }
   };

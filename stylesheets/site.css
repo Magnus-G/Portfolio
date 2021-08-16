@@ -454,7 +454,7 @@ textarea {
     text-transform: uppercase;
     color: #278684;
     text-decoration: none;
-    padding: .08rem .6rem;
+    padding: .08rem .2rem;
     font-size: 0.9rem; }
     .navigation a:hover {
       color: #56a1a0; }
@@ -595,11 +595,13 @@ textarea {
   height: 0;
   border-style: solid;
   border-width: 100px 0 0;
-  border-color: black transparent transparent #f5ffff; }
+  border-color: black transparent transparent white; }
 
 .clients-container {
   background: black;
   position: relative; }
+  .clients-container h1, .clients-container h2 {
+    color: white; }
   .clients-container .triangle {
     fill: #d7fffe; }
 
@@ -649,7 +651,7 @@ textarea {
           max-width: 10em; } }
 
 .portfolio-with-text-container {
-  background: #f5ffff;
+  background: white;
   padding-top: 10rem;
   position: relative; }
   .portfolio-with-text-container h1, .portfolio-with-text-container h2 {
@@ -658,7 +660,7 @@ textarea {
     fill: black; }
 
 .portfolio-container {
-  background: #f5ffff; }
+  background: white; }
 
 .portfolio {
   display: flex;
@@ -680,7 +682,7 @@ textarea {
       padding: 0rem 0rem 3rem 0rem;
       flex-basis: 20rem; } }
   .project-item img {
-    box-shadow: 0 1px 3px #00000033;
+    border-radius: 2px;
     margin-bottom: .8rem; }
   .project-item h3, .project-item h4 {
     color: #131515;
@@ -720,23 +722,11 @@ textarea {
     .project-container {
       padding: 5rem 1rem 0; } }
   .project-container img {
-    box-shadow: 0 1px 3px #00000039; }
+    border-radius: 3px; }
   .project-container h1 {
     text-align: left;
     color: #131515;
     margin-bottom: 3rem; }
-  .project-container h3 {
-    color: #131515;
-    text-transform: uppercase;
-    border-bottom: 2px solid;
-    font-family: "Oswald", helvetica, sans-serif;
-    display: inline-block;
-    font-weight: 400;
-    font-size: 1rem;
-    margin-top: 2rem; }
-    @media (max-width: 680px) {
-      .project-container h3 {
-        margin-top: .7rem; } }
   .project-container p, .project-container a {
     color: #131515;
     font-size: 1.1rem;
@@ -752,9 +742,10 @@ textarea {
 
 .project-bottom-section {
   position: relative;
-  background-color: #f5ffff; }
+  background-color: white;
+  color: #131515; }
   .project-bottom-section .portfolio {
-    padding-top: 6rem; }
+    padding-top: 2rem; }
 
 .project-triangle {
   height: 100px;
@@ -770,7 +761,7 @@ textarea {
   padding-top: 10rem;
   position: relative; }
   .resume-container .triangle {
-    fill: #f5ffff; }
+    fill: white; }
 
 .resume {
   color: #131515;
@@ -799,7 +790,9 @@ textarea {
   .resume h5 {
     color: #ea8d8b;
     text-transform: uppercase;
-    margin-bottom: 0.5em; }
+    margin-bottom: 0.5em;
+    margin-top: .5em;
+    font-weight: 800; }
   .resume p {
     line-height: 1.6;
     margin: 0 auto 3em; }
@@ -927,13 +920,15 @@ textarea {
   min-height: 25rem;
   padding-top: 10rem;
   background-color: #141919; }
+  .contact-content h1, .contact-content h2 {
+    color: #ffdddc; }
   .contact-content a {
     font-family: "norwester", helvetica, sans-serif;
-    color: #278684;
+    color: #ea8d8b;
     font-size: 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
-    background-color: #d7fffe;
+    background-color: #ffdddc;
     padding: 1.2rem 2rem;
     border-radius: 4px;
     letter-spacing: .6px; }
@@ -953,11 +948,22 @@ textarea {
 .up-link {
   font-family: "norwester", helvetica, sans-serif;
   text-transform: uppercase;
-  color: #278684;
+  color: #ffdddc;
   text-decoration: none; }
 
 .project-bottom-section .contact-content .triangle {
-  fill: #f5ffff; }
+  fill: white; }
+
+.case-container {
+  background: red; }
+
+.case {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center; }
+
+.case-text h1, .case-text h2, .case-text h3 {
+  text-align: left; }
 
 body, html {
   -webkit-font-smoothing: antialiased;
@@ -999,8 +1005,29 @@ h2 {
   @media (max-width: 680px) {
     h2 {
       font-size: 1.2rem;
-      margin: 0 auto 2rem;
+      margin: 0 auto 4rem;
       padding: 0 1rem; } }
+
+h3 {
+  color: #131515;
+  text-transform: uppercase;
+  border-bottom: 2px solid;
+  font-family: "Oswald", helvetica, sans-serif;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 2rem; }
+  @media (max-width: 680px) {
+    h3 {
+      margin-top: .7rem; } }
+
+h5 {
+  color: #131515;
+  font-size: .7rem;
+  margin: 0;
+  color: rgba(19, 21, 21, 0.5);
+  font-weight: 400;
+  margin-bottom: 0.1rem; }
 
 p {
   font-family: "Merriweather", serif;
