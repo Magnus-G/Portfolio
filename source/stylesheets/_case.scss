@@ -1,0 +1,15 @@
+.case-container {
+	background: red;
+}
+
+.case {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.case-text {
+	h1,h2,h3 {
+		text-align: left;
+	}
+}

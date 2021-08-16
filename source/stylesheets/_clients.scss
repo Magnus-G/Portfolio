@@ -6,6 +6,10 @@
   background: $clients-background;
   position: relative;
 
+  h1,h2 {
+  	color: white;
+  }
+
   .triangle {
     fill: $what-i-do-background;
   }

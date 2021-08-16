@@ -18,7 +18,9 @@ $hero-background: #141919;
 $body-color: $hero-background;
 $what-i-do-background: #d7fffe;
 $clients-background: black;
-$portfolio-background: #f5ffff;
+$cases-background: red;
+// $portfolio-background: #f5ffff;
+$portfolio-background: white;
 $project-background: white;
 $resume-background: #ffdddc;
 $contact-background: $hero-background;
@@ -82,6 +84,7 @@ svg {
 @import "resume";
 @import "resume-print";
 @import "contact";
+@import "case";
 
 body, html {
   -webkit-font-smoothing: antialiased;
@@ -129,9 +132,33 @@ h2 {
 
   @media (max-width: $breakpoint) {
     font-size: 1.2rem;
-    margin: 0 auto 2rem;
+    margin: 0 auto 4rem;
     padding: 0 1rem;
   }
+}
+
+h3 {
+	color: $dark-font-color;
+	text-transform: uppercase;
+	border-bottom: 2px solid;
+	font-family: $font-small-header;
+	display: inline-block;
+	font-weight: 400;
+	font-size: 1rem;
+	margin-top: 2rem;
+
+	@media (max-width: $breakpoint) {
+		margin-top: .7rem;
+	}
+}
+
+h5 {
+  color: $dark-font-color;
+  font-size: .7rem;
+  margin: 0;
+  color: transparentize($dark-font-color, 0.5);
+  font-weight: 400;
+  margin-bottom: 0.1rem;
 }
 
 p {

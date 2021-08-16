@@ -35,28 +35,13 @@
 	}
 
 	img {
-		box-shadow: 0 1px 3px #00000039;
+		border-radius: 3px;
 	}
 
 	h1 {
 		text-align: left;
 		color: $dark-font-color;
 		margin-bottom: 3rem;
-	}
-
-	h3 {
-		color: $dark-font-color;
-		text-transform: uppercase;
-		border-bottom: 2px solid;
-		font-family: $font-small-header;
-		display: inline-block;
-		font-weight: 400;
-		font-size: 1rem;
-		margin-top: 2rem;
-
-  	@media (max-width: $breakpoint) {
-  		margin-top: .7rem;
-  	}
 	}
 
 	p, a {
@@ -80,9 +65,10 @@
 .project-bottom-section {
 	position: relative;
 	background-color: $portfolio-background;
+	color: $dark;
 	
 	.portfolio {
-		padding-top: 6rem;
+		padding-top: 2rem;
 	}
 }
 
