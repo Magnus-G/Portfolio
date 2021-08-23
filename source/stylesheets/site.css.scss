@@ -18,8 +18,7 @@ $hero-background: #141919;
 $body-color: $hero-background;
 $what-i-do-background: #d7fffe;
 $clients-background: black;
-$cases-background: red;
-// $portfolio-background: #f5ffff;
+$highlight-background: #ffde66;
 $portfolio-background: white;
 $project-background: white;
 $resume-background: #ffdddc;
@@ -82,6 +81,7 @@ svg {
 @import "portfolio";
 @import "project";
 @import "resume";
+@import "highlight";
 @import "resume-print";
 @import "contact";
 @import "case";
@@ -161,10 +161,10 @@ h5 {
   margin-bottom: 0.1rem;
 }
 
-p {
+p, ul {
   font-family: $font-serif;
   font-size: 0.9rem;
-  line-height: 1.6;
+  line-height: 1.7;
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300;
@@ -179,5 +179,5 @@ img {
 }
 
 li {
-  list-style: none;
+  list-style: circle;
 }
