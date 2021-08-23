@@ -722,19 +722,47 @@ textarea {
     .project-container {
       padding: 5rem 1rem 0; } }
   .project-container img {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     border-radius: 3px; }
   .project-container h1 {
     text-align: left;
     color: #131515;
     margin-bottom: 3rem; }
+  .project-container h2 {
+    text-align: left;
+    color: #131515;
+    margin: 3rem 0 1rem 0;
+    font-weight: 800;
+    font-size: 1.2rem;
+    padding: 0; }
   .project-container p, .project-container a {
     color: #131515;
     font-size: 1.1rem;
-    margin-bottom: 3rem; }
+    margin-bottom: 1rem; }
     @media (max-width: 680px) {
       .project-container p, .project-container a {
         font-size: 0.9rem;
+        margin-bottom: 1rem; } }
+  .project-container ul {
+    color: #131515;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    padding-inline-start: 2rem; }
+    @media (max-width: 680px) {
+      .project-container ul {
+        font-size: 0.9rem;
         margin-bottom: 2rem; } }
+  .project-container strong {
+    color: #ababab;
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.8rem;
+    margin-top: -0.1rem;
+    margin-bottom: 2rem; }
+  .project-container code {
+    display: none; }
   .project-container .project-end {
     height: 3px;
     width: 46px;
@@ -743,7 +771,8 @@ textarea {
 .project-bottom-section {
   position: relative;
   background-color: white;
-  color: #131515; }
+  color: #131515;
+  width: 100vW; }
   .project-bottom-section .portfolio {
     padding-top: 2rem; }
 
@@ -819,6 +848,37 @@ textarea {
   .resume-print-link img {
     height: 1.5em;
     width: 1.5em; }
+
+.highlight-with-text-container {
+  background: #ffde66;
+  padding-top: 10rem;
+  position: relative; }
+  .highlight-with-text-container h1, .highlight-with-text-container h2 {
+    color: #131515; }
+  .highlight-with-text-container .triangle {
+    fill: black; }
+
+.highlight-container {
+  background: #ffde66; }
+  .highlight-container .project-item {
+    flex-basis: 25rem;
+    padding: 2rem 1rem;
+    text-decoration: none; }
+    @media (max-width: 680px) {
+      .highlight-container .project-item {
+        padding: 0rem 0rem 3rem 0rem;
+        flex-basis: 20rem; } }
+
+.highlight {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 6rem;
+  max-width: 1200px;
+  margin: auto; }
+  @media (max-width: 680px) {
+    .highlight {
+      padding: 1rem; } }
 
 .resume-print {
   background: white;
@@ -1029,19 +1089,19 @@ h5 {
   font-weight: 400;
   margin-bottom: 0.1rem; }
 
-p {
+p, ul {
   font-family: "Merriweather", serif;
   font-size: 0.9rem;
-  line-height: 1.6;
+  line-height: 1.7;
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300; }
   @media (max-width: 680px) {
-    p {
+    p, ul {
       font-size: 0.9em; } }
 
 img {
   width: 100%; }
 
 li {
-  list-style: none; }
+  list-style: circle; }
