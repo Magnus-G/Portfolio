@@ -1,0 +1,43 @@
+$project-padding: 20px;
+
+.highlight-with-text-container {
+  background: $highlight-background;
+  padding-top: $container-padding-big;
+  position: relative;
+
+  h1, h2 {
+    color: $dark-font-color;
+  }
+
+  .triangle {
+    fill: $clients-background;
+  }
+}
+
+.highlight-container {
+  background: $highlight-background;
+
+  .project-item {
+    flex-basis: 25rem;
+    padding: 2rem 1rem;
+    text-decoration: none;
+
+    @media (max-width: $breakpoint) {
+      padding: 0rem 0rem 3rem 0rem;
+      flex-basis: 20rem;
+    }
+	}
+}
+
+.highlight {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 6rem;
+  max-width: 1200px;
+  margin: auto;
+
+  @media (max-width: $breakpoint) {
+    padding: 1rem;
+  }
+}
