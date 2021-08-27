@@ -753,6 +753,7 @@ textarea {
     margin-bottom: 1rem; }
     @media (max-width: 680px) {
       .project-container p, .project-container a {
+        font-size: 1rem;
         margin-bottom: 1rem; } }
   .project-container ul {
     color: #131515;
