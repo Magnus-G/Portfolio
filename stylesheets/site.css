@@ -725,10 +725,17 @@ textarea {
     margin-top: 2rem;
     margin-bottom: 1rem;
     border-radius: 3px; }
+    @media (max-width: 680px) {
+      .project-container img {
+        margin-top: 1rem;
+        margin-bottom: 1rem; } }
   .project-container h1 {
     text-align: left;
     color: #131515;
     margin-bottom: 3rem; }
+    @media (max-width: 680px) {
+      .project-container h1 {
+        margin-bottom: 1rem; } }
   .project-container h2 {
     text-align: left;
     color: #131515;
@@ -736,13 +743,17 @@ textarea {
     font-weight: 800;
     font-size: 1.2rem;
     padding: 0; }
+    @media (max-width: 680px) {
+      .project-container h2 {
+        font-size: 1.2rem;
+        margin: 1.5rem 0 1rem 0; } }
   .project-container p, .project-container a {
     color: #131515;
     font-size: 1.1rem;
     margin-bottom: 1rem; }
     @media (max-width: 680px) {
       .project-container p, .project-container a {
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin-bottom: 1rem; } }
   .project-container ul {
     color: #131515;
@@ -754,7 +765,7 @@ textarea {
         font-size: 0.9rem;
         margin-bottom: 2rem; } }
   .project-container strong {
-    color: #ababab;
+    color: #aeb2ba;
     display: block;
     text-align: center;
     font-style: italic;
