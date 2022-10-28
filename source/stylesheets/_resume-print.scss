@@ -1,13 +1,13 @@
 $serif: 'georgia', serif;
-$resume-font-size: 11px;
-$resume-font-color: dimgray;
+$resume-font-size: 12px;
+$resume-font-color: #313131;
 $sans-thin-2: 'Oswald', sans-serif;
 $sans-2: 'Source Sans Pro', sans-serif;
 
 .resume-print {
   background: white;
   display: flex;
-  padding: 2em;
+  padding: 4em;
   max-width: 40em;
   margin: auto;
   background: white;
@@ -40,6 +40,7 @@ $sans-2: 'Source Sans Pro', sans-serif;
     p {
       color: $resume-font-color;
       font-size: $resume-font-size;
+      font-weight: 400;
       font-family: $sans-2;
       line-height: $resume-font-size * 1.5;
       margin: 0;
@@ -114,6 +115,7 @@ $sans-2: 'Source Sans Pro', sans-serif;
     p {
       color: $resume-font-color;
       font-size: $resume-font-size;
+      font-weight: 400;
       font-family: $sans-2;
       margin: 0 0 2.4em;
       line-height: 1.5;
