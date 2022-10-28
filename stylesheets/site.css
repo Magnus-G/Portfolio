@@ -377,7 +377,8 @@ textarea {
   /* 2 */ }
 
 .navigation {
-  background-color: #141919;
+  background-color: #131515;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
   padding: .8rem;
   position: fixed;
   z-index: 2;
@@ -893,7 +894,7 @@ textarea {
 .resume-print {
   background: white;
   display: flex;
-  padding: 4em;
+  padding: 2em;
   max-width: 40em;
   margin: auto;
   background: white; }
@@ -912,15 +913,14 @@ textarea {
     .resume-print aside h1 {
       text-transform: uppercase;
       display: inline-block;
-      color: #313131;
+      color: dimgray;
       font-family: "Oswald", sans-serif;
-      font-size: 14px;
+      font-size: 13.2px;
       font-weight: 800;
       margin: 0 0 1em; }
     .resume-print aside p {
-      color: #313131;
-      font-size: 12px;
-      font-weight: 400;
+      color: dimgray;
+      font-size: 11px;
       font-family: "Source Sans Pro", sans-serif;
       line-height: 16.5px;
       margin: 0; }
@@ -928,7 +928,7 @@ textarea {
         margin-top: 1em; }
       .resume-print aside p span {
         font-family: "georgia", serif;
-        font-size: 13px; }
+        font-size: 12.1px; }
   .resume-print article {
     width: 24em; }
     @media (max-width: 500px) {
@@ -938,22 +938,22 @@ textarea {
     .resume-print article h2 {
       text-transform: uppercase;
       display: block;
-      color: #313131;
-      font-size: 9px;
+      color: dimgray;
+      font-size: 7.7px;
       font-weight: 600;
       border-bottom: 1px solid #cfcfcf;
       padding-bottom: .7em;
       margin: 0 0 1.5em; }
     .resume-print article h3 {
-      color: #313131;
+      color: dimgray;
       display: inline-block;
-      font-size: 13px;
+      font-size: 12.1px;
       font-family: "georgia", serif;
       font-weight: 600;
       margin: 0 0 .4em 0; }
     .resume-print article h4 {
-      color: #313131;
-      font-size: 13px;
+      color: dimgray;
+      font-size: 12.1px;
       font-family: "georgia", serif;
       font-weight: 600;
       margin: 0 0 .4em 0;
@@ -963,20 +963,19 @@ textarea {
       font-weight: 400; }
     .resume-print article h5 {
       color: #9C9C9C;
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 400;
       font-family: "georgia", serif;
       margin: 0 0 .5em; }
     .resume-print article h6 {
-      color: #313131;
-      font-size: 12px;
+      color: dimgray;
+      font-size: 11px;
       font-weight: 400;
       font-family: "georgia", serif;
       margin: 0 0 .5em; }
     .resume-print article p {
-      color: #313131;
-      font-size: 12px;
-      font-weight: 400;
+      color: dimgray;
+      font-size: 11px;
       font-family: "Source Sans Pro", sans-serif;
       margin: 0 0 2.4em;
       line-height: 1.5; }
