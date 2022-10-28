@@ -377,8 +377,7 @@ textarea {
   /* 2 */ }
 
 .navigation {
-  background-color: #131515;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+  background: #141919;
   padding: .8rem;
   position: fixed;
   z-index: 2;
@@ -595,10 +594,10 @@ textarea {
   height: 0;
   border-style: solid;
   border-width: 100px 0 0;
-  border-color: black transparent transparent white; }
+  border-color: #141919 transparent transparent white; }
 
 .clients-container {
-  background: black;
+  background: #141919;
   position: relative; }
   .clients-container h1, .clients-container h2 {
     color: white; }
@@ -657,7 +656,7 @@ textarea {
   .portfolio-with-text-container h1, .portfolio-with-text-container h2 {
     color: #131515; }
   .portfolio-with-text-container .triangle {
-    fill: black; }
+    fill: #141919; }
 
 .portfolio-container {
   background: white; }
@@ -867,7 +866,7 @@ textarea {
   .highlight-with-text-container h1, .highlight-with-text-container h2 {
     color: #131515; }
   .highlight-with-text-container .triangle {
-    fill: black; }
+    fill: #141919; }
 
 .highlight-container {
   background: #ffde66; }
@@ -894,7 +893,7 @@ textarea {
 .resume-print {
   background: white;
   display: flex;
-  padding: 2em;
+  padding: 4em;
   max-width: 40em;
   margin: auto;
   background: white; }
@@ -913,22 +912,23 @@ textarea {
     .resume-print aside h1 {
       text-transform: uppercase;
       display: inline-block;
-      color: dimgray;
+      color: #313131;
       font-family: "Oswald", sans-serif;
-      font-size: 13.2px;
+      font-size: 14.4px;
       font-weight: 800;
       margin: 0 0 1em; }
     .resume-print aside p {
-      color: dimgray;
-      font-size: 11px;
+      color: #313131;
+      font-size: 12px;
+      font-weight: 400;
       font-family: "Source Sans Pro", sans-serif;
-      line-height: 16.5px;
+      line-height: 18px;
       margin: 0; }
       .resume-print aside p:last-child {
         margin-top: 1em; }
       .resume-print aside p span {
         font-family: "georgia", serif;
-        font-size: 12.1px; }
+        font-size: 13.2px; }
   .resume-print article {
     width: 24em; }
     @media (max-width: 500px) {
@@ -938,22 +938,22 @@ textarea {
     .resume-print article h2 {
       text-transform: uppercase;
       display: block;
-      color: dimgray;
-      font-size: 7.7px;
+      color: #313131;
+      font-size: 8.4px;
       font-weight: 600;
-      border-bottom: 1px solid #cfcfcf;
+      border-bottom: 1px solid #979797;
       padding-bottom: .7em;
       margin: 0 0 1.5em; }
     .resume-print article h3 {
-      color: dimgray;
+      color: #313131;
       display: inline-block;
-      font-size: 12.1px;
+      font-size: 13.2px;
       font-family: "georgia", serif;
       font-weight: 600;
       margin: 0 0 .4em 0; }
     .resume-print article h4 {
-      color: dimgray;
-      font-size: 12.1px;
+      color: #313131;
+      font-size: 13.2px;
       font-family: "georgia", serif;
       font-weight: 600;
       margin: 0 0 .4em 0;
@@ -963,19 +963,20 @@ textarea {
       font-weight: 400; }
     .resume-print article h5 {
       color: #9C9C9C;
-      font-size: 11px;
+      font-size: 12px;
       font-weight: 400;
       font-family: "georgia", serif;
       margin: 0 0 .5em; }
     .resume-print article h6 {
-      color: dimgray;
-      font-size: 11px;
+      color: #313131;
+      font-size: 12px;
       font-weight: 400;
       font-family: "georgia", serif;
       margin: 0 0 .5em; }
     .resume-print article p {
-      color: dimgray;
-      font-size: 11px;
+      color: #313131;
+      font-size: 12px;
+      font-weight: 400;
       font-family: "Source Sans Pro", sans-serif;
       margin: 0 0 2.4em;
       line-height: 1.5; }
