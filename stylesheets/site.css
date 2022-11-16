@@ -769,6 +769,8 @@ textarea {
     text-align: center;
     font-style: italic;
     font-size: 0.8rem;
+    max-width: 26rem;
+    margin: auto;
     margin-top: -0.1rem;
     margin-bottom: 2rem; }
   .project-container code {
