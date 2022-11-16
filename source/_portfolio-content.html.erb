@@ -1,11 +1,20 @@
 <div class="portfolio-container">
   
   <div class="portfolio">
+
+  	<% link_to 'projects/mindler.html', :class => 'project-item' do %>
+		  <img src="/images/projects/mindler1.png"/>
+		  <div class="project-text">
+		    <h5>Mindler</h5>
+		    <h4>Mental Healthcare App</h4>
+		  </div>
+		<% end %>
+
   	<% link_to 'projects/tvnu.html', :class => 'project-item' do %>
 		  <img src="/images/projects/tvnu-cover.png"/>
 		  <div class="project-text">
 		    <h5>tv.nu</h5>
-		    <h4>Sreaming & TV Guide</h4>
+		    <h4>Streaming & TV Guide</h4>
 		  </div>
 		<% end %>
 
@@ -16,6 +25,18 @@
         <h4>E-commerce Site</h4>
       </div>
     <% end %>
+
+    <!--
+
+  	<% link_to 'projects/mindler-concept.html', :class => 'project-item' do %>
+		  <img src="/images/projects/mindler-concept1.png"/>
+		  <div class="project-text">
+		    <h5>Mindler</h5>
+		    <h4>Concept for Social Anxiety App</h4>
+		  </div>
+		<% end %>
+
+	-->
 
     <% link_to 'projects/aerocrine.html', :class => 'project-item' do %>
       <img src="/images/projects/aerocrine2.png"/>
