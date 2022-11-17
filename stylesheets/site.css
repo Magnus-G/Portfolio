@@ -755,10 +755,20 @@ textarea {
         font-size: 1rem;
         margin-bottom: 1rem; } }
   .project-container ul {
+    border: 1px solid silver;
+    padding: 1.2rem 1rem 1.5rem;
+    border-radius: 6px;
     color: #131515;
     font-size: 1.1rem;
+    margin-top: 2rem;
     margin-bottom: 3rem;
-    padding-inline-start: 2rem; }
+    padding-inline-start: 2.2rem;
+    box-shadow: 0 7px 52px #0000001a; }
+    .project-container ul li {
+      margin-bottom: 9px; }
+    .project-container ul em {
+      font-weight: bold;
+      font-style: none !important; }
     @media (max-width: 680px) {
       .project-container ul {
         font-size: 0.9rem;
