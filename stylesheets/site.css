@@ -690,6 +690,9 @@ textarea {
     margin: 0 7rem;
     width: 8rem;
     transition: all .3s ease-out 100ms; }
+    @media (max-width: 680px) {
+      .project-item-focus img {
+        margin: 0 4rem; } }
   .project-item-focus:hover img {
     width: 8.5rem; }
 
