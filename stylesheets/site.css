@@ -708,6 +708,9 @@ textarea {
     font-size: .9rem;
     border-width: 1px;
     padding: .4rem 0; }
+    @media (max-width: 680px) {
+      .project-item-focus-back h3 {
+        margin: 1.5rem; } }
 
 .mindler {
   background: #19605D; }
